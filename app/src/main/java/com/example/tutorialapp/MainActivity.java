@@ -20,5 +20,14 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
+
+        button.setOnLongClickListener(
+                new Button.OnLongClickListener() {
+                    public boolean onLongClick(View w){
+                        button.setText("Wohaa, not so hard!");
+                        return true;
+                    }
+                }
+        );
     }
 }
