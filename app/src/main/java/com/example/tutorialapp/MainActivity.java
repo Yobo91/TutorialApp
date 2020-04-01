@@ -29,7 +29,18 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         int action = event.getActionMasked();
+        int amount = event.getPointerCount();
 
+        event.getPointerId(0);
+        MotionEvent.ACTION_DOWN
+        MotionEvent.ACTION_POINTER_DOWN
+        MotionEvent.ACTION_POINTER_UP
+        MotionEvent.ACTION_UP
+
+
+
+
+        /*
         switch (action) {
             case MotionEvent.ACTION_DOWN:
                 if(vt==null) {
@@ -54,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         return true;
         //this.compat.onTouchEvent(event);
         //return super.onTouchEvent(event);
+        */
     }
 
     //Gesten//
